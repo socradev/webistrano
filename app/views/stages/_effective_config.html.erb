@@ -16,7 +16,7 @@
         <tr>
           <td><%= truncate(conf.name, length: 25) %></td>
           <td><%= truncate(hide_password_in_value(conf), length: 45) %></td>
-          <td><%= conf.prompt_status_in_html %></td>
+          <td><%= prompt_status_in_html conf %></td>
         </tr>
       <% end %>
     </tbody>
